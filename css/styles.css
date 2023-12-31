@@ -594,13 +594,14 @@ a:active {
   letter-spacing: 0.32px;
 }
 
-
+.form-wrapper{
+  margin-bottom:8px;
+}
 
 .form-label {
   display: block;
   color: #8e8f99;
   margin-bottom: 4px;
-  margin-top: 8px;
   /* Small Text */
   font-size: 12px;
   line-height: 1.17; /* 116.667% */
@@ -752,7 +753,7 @@ a:active {
   margin-left: 8px;
 }
 
-.checkbox:checked + .form-agreement-checkbox {
+.checkbox:checked + .form-agreement-label > .form-agreement-checkbox {
   border: none;
   background-color: #404bbf;
   fill:#F4F4FD;
@@ -775,7 +776,7 @@ a:active {
   transition: opacity 300ms ease 150ms, transform 300ms ease 150ms;
 }
 
-.checkbox:checked + .form-agreement-checkbox > .form-agreement-icon {
+.checkbox:checked + .form-agreement-label > .form-agreement-checkbox > .form-agreement-icon {
   opacity: 1;
   transform: scale(1);
 }
